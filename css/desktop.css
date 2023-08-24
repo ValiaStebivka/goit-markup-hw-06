@@ -25,8 +25,7 @@ body {
 .container {
   padding: 0 15px;
   margin: 0 auto;
-  max-width: 1158px;
-  width: 100%;
+  width: 1158px;
 }
 
 h1,
@@ -73,8 +72,9 @@ a {
 }
 
 .header-nav-list {
-  display: none;
+  display: flex;
   gap: 40px;
+  position: relative;
   color: var(--ocean);
   position: relative;
   transition: color var(--transition-settings);
@@ -82,7 +82,7 @@ a {
 
 .header-nav-list .current {
   color: var(--ocean);
-  position: relative;
+  position: relative; /*тут невпевнена*/
 }
 
 .current::after {
@@ -130,6 +130,12 @@ a {
   border-radius: 2px;
 }
 
+.contacts-list {
+  display: flex;
+  gap: 40px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .logo {
   color: var(--iris);
   font-family: "Raleway", sans-serif;
@@ -151,14 +157,7 @@ a {
 }
 
 .contacts {
-  display: none;
   font-style: normal;
-}
-
-.contacts-list {
-  display: flex;
-  gap: 40px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-item {
@@ -179,14 +178,7 @@ a {
 .contacts-link:focus {
   color: var(--ocean);
 }
-/*menu_mobile*/
 
-.menu-icon {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  flex-shrink: 0;
-  fill: var(--navyblue);
-}
 /* Section 1 */
 
 .intro {
