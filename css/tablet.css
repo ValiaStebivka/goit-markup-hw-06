@@ -1,0 +1,125 @@
+.header {
+  padding: 0;
+}
+.header-nav-list {
+  justify-content: center;
+}
+
+.header-nav-list {
+  display: flex;
+}
+
+.contacts {
+  display: block;
+}
+
+.contacts-list {
+  display: block;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/*Section1*/
+.intro {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+}
+
+.intro-title {
+  margin-bottom: 36px;
+}
+
+/*section2*/
+
+.features-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 72px 24px;
+}
+
+.features-item {
+  flex-basis: calc((100% - 24px) / 2);
+}
+
+/*section 4*/
+.team-container {
+  max-width: 768px;
+}
+
+/*section 5*/
+
+.customers {
+  max-width: 582px;
+}
+
+.customer-list {
+  gap: 72px 24px;
+}
+.customer-logo-item {
+  width: calc((100% - 24px * 2) / 3);
+  height: 88px;
+}
+
+.customer-icon {
+  width: 104px;
+  height: 56px;
+}
+
+/*footer*/
+
+.footer-container {
+  justify-content: start;
+  align-items: baseline;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.footer-container-logo {
+  display: block;
+}
+
+.footer-social-media-title {
+  text-align: inherit;
+}
+
+.footer-subscribe {
+}
+
+.footer-form {
+  flex-direction: row;
+  gap: 24px;
+}
+
+.footer-form-input {
+  min-width: 264px;
+  height: 40px;
+  margin-bottom: 0;
+}
+
+/*portfolio*/
+.portfolio-container {
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+
+.portfolio-list {
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+.portfolio-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px 24px;
+}
+
+.portfolio-info {
+  flex-basis: calc((100% - 24px) / 2);
+}

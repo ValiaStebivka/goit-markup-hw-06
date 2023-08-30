@@ -13,7 +13,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
+
     <link rel="stylesheet" href="css/slyles.css" />
+    <link
+      rel="stylesheet"
+      href="css/tablet.css"
+      media="screen and (min-width:768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/desktop.css"
+      media="screen and (min-width:1158px)"
+    />
+
     <title>Document</title>
   </head>
   <body>
@@ -54,36 +66,34 @@
           </ul>
         </address>
 
-        <!--
         <button
           class="menu-toggle js-open-menu style-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
-        >-->
-
-        <svg class="menu-icon" width="32" height="22">
-          <use href="./images/icons.svg#icon-hamburger"></use>
-        </svg>
-        <!--</button>-->
+        >
+          <svg class="menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
       <!-- section 1 -->
-      <!-- <section class="intro">
+      <section class="intro">
         <div class="container">
           <h1 class="intro-title">Effective Solutions for Your Business</h1>
           <button class="intro-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- section 2 -->
-      <!-- <section class="features">
+      <section class="features">
         <div class="container">
           <h2 class="visually-hidden">Our Features</h2>
-          <ul class="features-list list">
+          <ul class="features-list">
             <li class="features-item">
               <div class="features-img">
                 <svg class="features-icon" width="64" height="64">
@@ -136,10 +146,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- section 3 -->
-      <!-- <section class="work">
+      <section class="work">
         <div class="container">
           <h2 class="work-title">What are we doing</h2>
           <ul class="work-list card-set">
@@ -164,13 +174,13 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- section 4 -->
-      <!-- <section class="team">
-        <div class="container">
+      <section class="team">
+        <div class="container team-container">
           <h2 class="section-title">Our Team</h2>
-          <ul class="list card-set">
+          <ul class="card-set">
             <li class="team-item">
               <img
                 src="./images/mark.jpg"
@@ -449,10 +459,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Section 5-->
-      <!-- <section class="customer-section">
+      <section class="customer-section">
         <div class="container customers">
           <h2 class="customer-title">Customers</h2>
           <ul class="customer-list">
@@ -500,12 +510,12 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- footer -->
-    <!-- <footer class="footer">
-      <div class="container">
-        <div class="footer-container">
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-container-logo">
           <a class="footer-logo" href="./index.html">
             Web<span class="footer-logo-white">Studio</span>
           </a>
@@ -550,7 +560,7 @@
             </li>
           </ul>
         </div>
-       
+
         <div class="fotter-subscribe">
           <p class="footer-subscribe-title">Subscribe</p>
           <form class="footer-form">
@@ -571,7 +581,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- Modal Window-->
 
@@ -666,8 +676,88 @@
       </div>
     </div>
 
+    <div class="js-menu-container" id="mobile-menu">
+      <div class="mobile-container">
+        <button
+          class="modal-close js-close-menu"
+          data-modal-close
+          type="button"
+        >
+          <svg class="modal-icon-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-list">
+          <li class="mobile-link">
+            <a class="mobile-nav current" href="./index.html">Studio</a>
+          </li>
+          <li class="mobile-link">
+            <a class="mobile-nav" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mobile-link">
+            <a class="mobile-nav" href="">Contacts</a>
+          </li>
+        </ul>
+
+        <address class="mobile-address">
+          <ul class="mobile-address-list">
+            <li class="mobile-address-item">
+              <a class="mobile-address-item-tel" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-address-item">
+              <a
+                class="mobile-address-item-mail"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="mobile-social-list">
+          <li class="mobile-social-item">
+            <a class="mobile-icon-social" href="#">
+              <svg class="mobile-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-social-item">
+            <a class="mobile-icon-social" href="#">
+              <svg class="mobile-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-social-item">
+            <a class="mobile-icon-social" href="#">
+              <svg class="mobile-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-social-item">
+            <a class="mobile-icon-social" href="#">
+              <svg class="mobile-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <!-- Scripts -->
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/mobile.js"></script>
   </body>
 </html>
