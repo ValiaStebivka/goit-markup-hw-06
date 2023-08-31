@@ -23,10 +23,8 @@ body {
 }
 
 .container {
-  padding: 0 15px;
+  padding: 0 16px;
   margin: 0 auto;
-  max-width: 1158px;
-  width: 100%;
 }
 
 h1,
@@ -218,19 +216,32 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  max-width: 1440px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .list-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-mobile2x.jpg);
+  }
 }
 
 .intro-title {
   color: var(--white);
   max-width: 496px;
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 1.12px;
+  letter-spacing: 0.72px;
   margin: auto;
   margin-bottom: 48px;
   font-style: normal;
-  line-height: 60px;
+  line-height: 1.11;
   margin-bottom: 72px;
 }
 
@@ -277,10 +288,10 @@ a {
 }
 
 .features-img {
-  padding: 24px 100px;
   display: none;
   justify-content: center;
   align-items: center;
+  height: 112px;
   border-radius: 4px;
   background-color: #f4f4fd;
   margin-bottom: 8px;
@@ -300,7 +311,7 @@ a {
 .features-item-info {
   color: var(--slate);
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -348,6 +359,7 @@ a {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 .team-name {
   padding: 32px 0;
 }
@@ -365,7 +377,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  gap: 74px;
 }
 .section-item-title {
   color: var(--navyblue);
@@ -493,6 +505,7 @@ a {
   justify-content: center;
   align-items: center;
   max-width: 582px;
+  gap: 72px;
 }
 
 .footer-container-logo {
@@ -500,7 +513,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 72px;
 }
 
 .footer-logo {
@@ -583,9 +595,8 @@ a {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
-  display: block;
   margin-bottom: 16px;
-  text-align: start;
+  text-align: center;
 }
 .footer-form {
   gap: 16px;
@@ -1111,7 +1122,6 @@ input:checked + label > span {
 }
 
 .mobile-address {
-  margin-top: auto;
   margin-bottom: 48px;
 }
 
@@ -1147,6 +1157,7 @@ input:checked + label > span {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
+  gap: 56px;
 }
 
 .mobile-social-item {
