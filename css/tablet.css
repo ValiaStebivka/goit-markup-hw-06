@@ -126,7 +126,9 @@
 .footer-social-media-title {
   text-align: inherit;
 }
-
+.footer-subscribe {
+  width: 0%;
+}
 .footer-subscribe-title {
   text-align: start;
 }
