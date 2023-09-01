@@ -1,10 +1,20 @@
 .container {
-  width: 1158px;
-  padding: 0%;
+  max-width: 1158px;
+  padding: 0 15px;
 }
 
 .contacts-list {
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.contacts-link {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.32px;
 }
 
 .current::after {
@@ -18,18 +28,18 @@
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
-  padding: 112px 0;
+  max-width: 1158px;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
-  .list-hero {
+  .intro {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office2x.jpg);
+      url(../images/people-office@2x.jpg);
   }
 }
 
@@ -87,10 +97,6 @@
   padding-bottom: 120px;
 }
 
-.customers {
-  max-width: 1158px;
-}
-
 .customer-list {
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -101,8 +107,6 @@
 }
 
 .footer-container {
-  flex-wrap: nowrap;
-  justify-content: center;
   max-width: 1158px;
   gap: unset;
 }
