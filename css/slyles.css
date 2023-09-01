@@ -56,8 +56,6 @@ a {
 
 /*header*/
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -349,7 +347,7 @@ a {
 
 .team {
   background-color: var(--cloud);
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .team-container {
@@ -591,6 +589,7 @@ a {
 .footer-subscribe {
   width: 100%;
 }
+
 .footer-subscribe-title {
   color: var(--white);
   font-size: 16px;
@@ -702,9 +701,6 @@ a {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
   margin-left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .backdrop .modal-btn {
@@ -1102,9 +1098,6 @@ input:checked + label > span {
 }
 
 .mobile-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
   margin-bottom: auto;
 }
 
@@ -1157,9 +1150,10 @@ input:checked + label > span {
 }
 
 .mobile-social-list {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 56px;
+  min-width: 328px;
 }
 
 .mobile-social-item {
@@ -1168,12 +1162,15 @@ input:checked + label > span {
 }
 
 .mobile-icon-social {
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
   background-color: var(--iris);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-icon {
 }

@@ -12,6 +12,9 @@
   display: flex;
 }
 
+.logo {
+  margin-right: 120px;
+}
 .contacts {
   display: block;
 }
@@ -94,6 +97,9 @@
 }
 
 /*section 5*/
+.customers {
+  width: 584px;
+}
 
 .customer-list {
   gap: 72px 24px;
@@ -109,6 +115,9 @@
 }
 
 /*footer*/
+.footer-subscribe {
+  width: unset;
+}
 
 .footer-container {
   justify-content: start;
@@ -126,9 +135,7 @@
 .footer-social-media-title {
   text-align: inherit;
 }
-.footer-subscribe {
-  width: 0%;
-}
+
 .footer-subscribe-title {
   text-align: start;
 }
