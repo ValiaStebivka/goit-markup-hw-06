@@ -1,5 +1,5 @@
 .container {
-  max-width: 1440px;
+  max-width: 1158px;
   padding: 0 15px;
 }
 
@@ -30,7 +30,7 @@
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
-  max-width: 1158px;
+  max-width: 1440px;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
