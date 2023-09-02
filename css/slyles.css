@@ -1152,13 +1152,13 @@ input:checked + label > span {
 .mobile-social-list {
   display: flex;
   align-items: center;
-  gap: 56px;
-  min-width: 328px;
+  /*gap: 56px;*/
 }
 
 .mobile-social-item {
   width: 40px;
   height: 40px;
+  margin-right: auto;
 }
 
 .mobile-icon-social {
